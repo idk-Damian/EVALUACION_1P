@@ -40,9 +40,49 @@
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta a la Pregunta 1 -->
+
+Se entiende por fork a la copia de un repositorio dentro de la cuenta personal de GitHub. Esto permite trabajar sobre una versión propia del proyecto sin modificar directamente el repositorio original.
+
+El comando git clone se utiliza para descargar una copia del repositorio remoto al equipo local, creando una carpeta con todos los archivos e historial de cambios.
+
+El comando git pull sirve para traer y fusionar al repositorio local los cambios más recientes que existen en el repositorio remoto.
+
+Proceso realizado:
+
+1. Primero se realizó el fork del repositorio original desde GitHub, usando la opción "Fork" en la parte superior derecha de la página del repositorio.
+2. Luego se ingresó al fork creado en la cuenta personal y se copió el enlace desde el botón "Code".
+3. Después, en la terminal, se ejecutó el siguiente comando para clonar el fork en el equipo local:
+
+   git clone https://github.com/idk-Damian/EVALUACION_1P.git
+
+4. Se ingresó a la carpeta del proyecto con:
+
+   cd EVALUACION_1P
+
+5. Para verificar que se estaba trabajando sobre el fork y no sobre el repositorio original, se ejecutó:
+
+   git remote -v
+
+   En la salida se observó que el remote origin apuntaba al repositorio personal del estudiante.
+
+6. Adicionalmente, se agregó el repositorio original como upstream con el comando:
+
+   git remote add upstream https://github.com/santiagojara/EVALUACION_1P.git
+
+Con esto se confirmó que:
+- origin corresponde al fork personal
+- upstream corresponde al repositorio original
 
 ---
+EVIDENCIAS
+
+![Fork realizado](images/Fork.jpg)
+![Clone del fork](imagenes/gitclone.jpg)
+![Verificación de remotes](images/Verificacion.jpg)
+
+
+
+
 
 ## Pregunta 2 (1 punto)
 
