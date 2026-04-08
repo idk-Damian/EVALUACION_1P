@@ -76,9 +76,9 @@ Con esto se confirmó que:
 ---
 EVIDENCIAS
 
-![Fork realizado](images/Fork.jpg)
+![Fork realizado](imagenes/Fork.jpg)
 ![Clone del fork](imagenes/gitclone.jpg)
-![Verificación de remotes](images/Verificacion.jpg)
+![Verificación de remotes](imagenes/Verificacion.jpg)
 
 
 
