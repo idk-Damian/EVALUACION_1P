@@ -1,10 +1,10 @@
-# Universidad [Nombre de la Universidad]  
-## Facultad de [Nombre de la Facultad]  
-### Carrera de [Nombre de la Carrera]  
+# Universidad UNIVERSIDAD TECNICA DE AMBATO
+## Facultad de FISEI  
+### Carrera de SOFTWARE 
 
 **Asignatura:** Manejo y Configuración de Software  
-**Nombre del Estudiante:** ___________________________  
-**Fecha:** ___________________  
+**Nombre del Estudiante:** Pablo Lozada
+**Fecha:** 08/04/2026
 
 ---
 
