@@ -218,7 +218,26 @@ Git Flow permite organizar mejor el trabajo cuando existen varias tareas o integ
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 4 -->
+Un Pull Request es una solicitud para integrar cambios de una rama hacia otra dentro de un repositorio. Su función principal en un flujo de trabajo colaborativo es permitir que los cambios sean revisados antes de ser fusionados, facilitando el control de calidad y la coordinación entre los integrantes del proyecto.
+
+Es importante revisar un Pull Request antes de fusionarlo con la rama principal porque así se pueden detectar errores, cambios incompletos, conflictos, malas prácticas o información faltante. También permite confirmar que los cambios cumplen con el objetivo planteado y no afectan negativamente al resto del proyecto.
+
+Durante la revisión de un Pull Request se suelen validar aspectos como:
+- que el código o contenido esté correcto
+- que los cambios correspondan realmente a lo solicitado
+- que no existan conflictos con otras ramas
+- que la redacción o estructura sea adecuada
+- que las capturas o evidencias estén completas si la actividad lo requiere
+
+Procedimiento realizado:
+
+Se trabajó en la rama `develop`, donde se realizaron los cambios necesarios en el archivo README.md para responder la parte teórica de la pregunta. Luego se hizo un commit y se subió la rama al repositorio remoto. Después se creó un Pull Request desde `develop` hacia `main` con el nombre solicitado.
+
+Dentro del Pull Request se agregaron comentarios indicando que faltaba incorporar la respuesta de la segunda pregunta, y posteriormente se añadió mediante un nuevo commit. Después se repitió el mismo procedimiento para la tercera pregunta. Finalmente, el Pull Request fue aprobado y fusionado hacia la rama `main`.
+
+Número y enlace del Pull Request:
+[Aquí colocas el número y el enlace cuando ya lo hayas creado en GitHub]
+
 
 ---
 
