@@ -1,10 +1,10 @@
-# Universidad [Nombre de la Universidad]  
-## Facultad de [Nombre de la Facultad]  
-### Carrera de [Nombre de la Carrera]  
+# Universidad UNIVERSIDAD TECNICA DE AMBATO
+## Facultad de FISEI  
+### Carrera de SOFTWARE 
 
 **Asignatura:** Manejo y Configuración de Software  
-**Nombre del Estudiante:** ___________________________  
-**Fecha:** ___________________  
+**Nombre del Estudiante:** Pablo Lozada
+**Fecha:** 08/04/2026
 
 ---
 
@@ -154,7 +154,41 @@ Esto permitió comprobar que las reglas del `.gitignore` funcionan de manera esp
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
+Para esta pregunta se utilizó Git Flow como modelo de organización de ramas dentro del repositorio.
+
+Comandos utilizados:
+
+1. Inicialización de Git Flow:
+   git flow init
+
+2. Creación de la rama feature:
+   git flow feature start ingresar-encabezado
+
+3. Registro de cambios realizados en el encabezado:
+   git add README.md
+   git commit -m "Completa encabezado personal en la feature ingresar-encabezado"
+
+4. Cierre de la rama feature:
+   git flow feature finish ingresar-encabezado
+
+5. Envío de cambios al repositorio remoto:
+   git push origin develop
+
+Proceso realizado:
+
+Primero se inicializó Git Flow en el repositorio, configurando las ramas principales `main` y `develop`. Después se creó una rama de tipo feature llamada `ingresar-encabezado`, destinada a trabajar de forma aislada en la edición del encabezado del archivo README.md.
+
+Dentro de esta rama se completaron los datos personales del estudiante y se realizaron los commits correspondientes. Una vez terminados los cambios, se finalizó la feature usando el flujo de Git Flow, lo que permitió integrar los cambios a la rama `develop` y eliminar la rama de trabajo temporal.
+
+Ventajas de Git Flow:
+
+Git Flow permite organizar mejor el trabajo cuando existen varias tareas o integrantes en un proyecto. Ayuda a separar el desarrollo de nuevas funcionalidades, correcciones y versiones estables, evitando que todos trabajen directamente sobre la rama principal. En proyectos colaborativos o de larga duración, este modelo facilita el control de cambios, mejora el orden del trabajo y reduce el riesgo de errores al momento de integrar avances.
+
+![git flow init](imagenes/gitflow-init.jpg)
+![git flow feature start ingresar-encabezado](imagenes/feature-start.jpg)
+![commits realizados](imagenes/feature-commit.jpg)
+![git flow feature finish ingresar-encabezado](imagenes/feature-finish.jpg)
+
 
 ---
 
@@ -184,7 +218,28 @@ Esto permitió comprobar que las reglas del `.gitignore` funcionan de manera esp
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 4 -->
+Un Pull Request es una solicitud para integrar cambios de una rama hacia otra dentro de un repositorio. Su función principal en un flujo de trabajo colaborativo es permitir que los cambios sean revisados antes de ser fusionados, facilitando el control de calidad y la coordinación entre los integrantes del proyecto.
+
+Es importante revisar un Pull Request antes de fusionarlo con la rama principal porque así se pueden detectar errores, cambios incompletos, conflictos, malas prácticas o información faltante. También permite confirmar que los cambios cumplen con el objetivo planteado y no afectan negativamente al resto del proyecto.
+
+Durante la revisión de un Pull Request se suelen validar aspectos como:
+- que el código o contenido esté correcto
+- que los cambios correspondan realmente a lo solicitado
+- que no existan conflictos con otras ramas
+- que la redacción o estructura sea adecuada
+- que las capturas o evidencias estén completas si la actividad lo requiere
+
+Procedimiento realizado:
+
+Se trabajó en la rama `develop`, donde se realizaron los cambios necesarios en el archivo README.md para responder la parte teórica de la pregunta. Luego se hizo un commit y se subió la rama al repositorio remoto. Después se creó un Pull Request desde `develop` hacia `main` con el nombre solicitado.
+
+Dentro del Pull Request se agregaron comentarios indicando que faltaba incorporar la respuesta de la segunda pregunta, y posteriormente se añadió mediante un nuevo commit. Después se repitió el mismo procedimiento para la tercera pregunta. Finalmente, el Pull Request fue aprobado y fusionado hacia la rama `main`.
+
+Número y enlace del Pull Request:
+gh pr checkout 159
+
+![recopilacion1](imagenes/recopilacion1jpg)
+
 
 ---
 
@@ -217,8 +272,26 @@ Esto permitió comprobar que las reglas del `.gitignore` funcionan de manera esp
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 5 -->
+Para esta pregunta se crearon dos ramas a partir de `develop`, llamadas `ramaA` y `ramaB`.
 
+En `ramaA` se creó el archivo `archivoA.txt` con el contenido:
+
+Contenido A
+
+Luego, en `ramaB`, se creó un archivo con el mismo nombre pero con el contenido:
+
+Contenido B
+
+Después se intentó fusionar `ramaB` sobre `ramaA`, lo que generó un conflicto debido a que ambas ramas modificaban el mismo archivo de manera diferente. Git no pudo decidir automáticamente cuál contenido conservar, por lo que fue necesario resolver el conflicto manualmente.
+
+La resolución consistió en editar el archivo `archivoA.txt` para combinar ambos contenidos, quedando así:
+
+Contenido A  
+Contenido B
+
+Una vez resuelto el conflicto, se hizo el commit correspondiente y luego se fusionó `ramaA` hacia `develop`. Posteriormente se creó un Pull Request desde `develop` hacia `main` y finalmente se eliminaron las ramas `ramaA` y `ramaB`.
+
+Un conflicto en Git ocurre cuando dos ramas tienen cambios incompatibles sobre una misma parte de un archivo y Git no puede fusionarlos automáticamente. En este caso ocurrió porque ambas ramas crearon y modificaron el mismo archivo `archivoA.txt` con contenido distinto.
 ---
 
 ## Pregunta 6 (2 puntos)
