@@ -154,7 +154,41 @@ Esto permitió comprobar que las reglas del `.gitignore` funcionan de manera esp
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
+Para esta pregunta se utilizó Git Flow como modelo de organización de ramas dentro del repositorio.
+
+Comandos utilizados:
+
+1. Inicialización de Git Flow:
+   git flow init
+
+2. Creación de la rama feature:
+   git flow feature start ingresar-encabezado
+
+3. Registro de cambios realizados en el encabezado:
+   git add README.md
+   git commit -m "Completa encabezado personal en la feature ingresar-encabezado"
+
+4. Cierre de la rama feature:
+   git flow feature finish ingresar-encabezado
+
+5. Envío de cambios al repositorio remoto:
+   git push origin develop
+
+Proceso realizado:
+
+Primero se inicializó Git Flow en el repositorio, configurando las ramas principales `main` y `develop`. Después se creó una rama de tipo feature llamada `ingresar-encabezado`, destinada a trabajar de forma aislada en la edición del encabezado del archivo README.md.
+
+Dentro de esta rama se completaron los datos personales del estudiante y se realizaron los commits correspondientes. Una vez terminados los cambios, se finalizó la feature usando el flujo de Git Flow, lo que permitió integrar los cambios a la rama `develop` y eliminar la rama de trabajo temporal.
+
+Ventajas de Git Flow:
+
+Git Flow permite organizar mejor el trabajo cuando existen varias tareas o integrantes en un proyecto. Ayuda a separar el desarrollo de nuevas funcionalidades, correcciones y versiones estables, evitando que todos trabajen directamente sobre la rama principal. En proyectos colaborativos o de larga duración, este modelo facilita el control de cambios, mejora el orden del trabajo y reduce el riesgo de errores al momento de integrar avances.
+
+![git flow init](imagenes/gitflow-init.jpg)
+![git flow feature start ingresar-encabezado](imagenes/feature-start.jpg)
+![commits realizados](imagenes/feature-commit.jpg)
+![git flow feature finish ingresar-encabezado](imagenes/feature-finish.jpg)
+
 
 ---
 
