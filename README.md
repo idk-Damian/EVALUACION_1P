@@ -272,8 +272,26 @@ gh pr checkout 159
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 5 -->
+Para esta pregunta se crearon dos ramas a partir de `develop`, llamadas `ramaA` y `ramaB`.
 
+En `ramaA` se creó el archivo `archivoA.txt` con el contenido:
+
+Contenido A
+
+Luego, en `ramaB`, se creó un archivo con el mismo nombre pero con el contenido:
+
+Contenido B
+
+Después se intentó fusionar `ramaB` sobre `ramaA`, lo que generó un conflicto debido a que ambas ramas modificaban el mismo archivo de manera diferente. Git no pudo decidir automáticamente cuál contenido conservar, por lo que fue necesario resolver el conflicto manualmente.
+
+La resolución consistió en editar el archivo `archivoA.txt` para combinar ambos contenidos, quedando así:
+
+Contenido A  
+Contenido B
+
+Una vez resuelto el conflicto, se hizo el commit correspondiente y luego se fusionó `ramaA` hacia `develop`. Posteriormente se creó un Pull Request desde `develop` hacia `main` y finalmente se eliminaron las ramas `ramaA` y `ramaB`.
+
+Un conflicto en Git ocurre cuando dos ramas tienen cambios incompatibles sobre una misma parte de un archivo y Git no puede fusionarlos automáticamente. En este caso ocurrió porque ambas ramas crearon y modificaron el mismo archivo `archivoA.txt` con contenido distinto.
 ---
 
 ## Pregunta 6 (2 puntos)
