@@ -236,7 +236,9 @@ Se trabajó en la rama `develop`, donde se realizaron los cambios necesarios en 
 Dentro del Pull Request se agregaron comentarios indicando que faltaba incorporar la respuesta de la segunda pregunta, y posteriormente se añadió mediante un nuevo commit. Después se repitió el mismo procedimiento para la tercera pregunta. Finalmente, el Pull Request fue aprobado y fusionado hacia la rama `main`.
 
 Número y enlace del Pull Request:
-[Aquí colocas el número y el enlace cuando ya lo hayas creado en GitHub]
+gh pr checkout 159
+
+![recopilacion1](imagenes/recopilacion1jpg)
 
 
 ---
