@@ -103,9 +103,30 @@ EVIDENCIAS
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu explicación y evidencia para la Pregunta 2 -->
+El archivo `.gitignore` se utiliza para indicarle a Git qué archivos o carpetas no deben ser rastreados dentro del repositorio. Esto es útil para evitar subir archivos temporales, registros, archivos generados automáticamente o elementos que no forman parte del desarrollo principal del proyecto.
 
+Para esta pregunta se configuró el archivo `.gitignore` con las siguientes reglas:
+
+- `*.log` para ignorar todos los archivos con extensión `.log`
+- `temp/` para ignorar la carpeta `temp/`
+- `doc/*.md` para ignorar los archivos Markdown dentro de `doc/`
+- `doc/*.txt` para ignorar los archivos de texto dentro de `doc/`
+
+Después se crearon archivos de prueba dentro y fuera de la carpeta `doc/` para comprobar el funcionamiento.
+
+Resultados observados:
+
+- El archivo `error.log` fue ignorado correctamente.
+- La carpeta `temp/` también fue ignorada.
+- Los archivos `doc/prueba.md` y `doc/prueba.txt` no fueron rastreados por Git.
+- En cambio, los archivos `prueba.md` y `prueba.txt` creados fuera de la carpeta `doc/` sí fueron detectados por Git, porque la regla solo aplica a los archivos `.md` y `.txt` ubicados dentro de `doc/`.
+
+Esto permitió comprobar que las reglas del `.gitignore` funcionan de manera específica según la ruta y el tipo de archivo definidos.
 ---
+![Contenido de gitignore](imagenes/gitignore-p2.jpg)
+![Archivos rastreados con git status](imagenes/status-p2.jpg)
+![Archivos ignorados](imagenes/ignored-p2.jpg)
+
 
 ## Pregunta 3 (2 puntos)
 
